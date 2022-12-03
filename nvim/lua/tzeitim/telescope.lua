@@ -146,7 +146,7 @@ function M.find_dot()
   require('telescope.builtin').find_files{
     cwd = '/home/polivar/.config',
 --    find_command={'rg', '--follow', '--hidden', '--files'},
---    follow=true,
+    follow=true,
     hidden=true,
     previewer=false,
     path_display={
