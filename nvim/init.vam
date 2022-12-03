@@ -1,0 +1,41 @@
+
+set relativenumber
+
+call plug#begin(stdpath('data') . '/plugged')
+ " Plugin Section
+ " Colorschemes
+ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+ Plug 'dracula/vim'
+ Plug 'EdenEast/nightfox.nvim' 
+
+ Plug 'nvim-lua/plenary.nvim'
+ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+" or                                , { 'branch': '0.1.x' }
+ Plug 'kyazdani42/nvim-web-devicons'
+" Plug 'EdenEast/nightfox.nvim', { 'tag': 'v1.0.0' } " Vim-Plug
+ Plug 'nvim-treesitter/nvim-treesitter'
+ Plug 'nvim-treesitter/nvim-treesitter-context'
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+" Plug 'scrooloose/nerdtree'
+" Plug 'preservim/nerdcommenter'
+" Plug 'mhinz/vim-startify'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+"colorscheme carbonfox
+colorscheme tokyonight-night
+let mapleader = "'"
+
+
+" telescope
+" " Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+set encoding=UTF-8
+
+set hlsearch
