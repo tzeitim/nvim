@@ -21,8 +21,13 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
 
--- toggle Lexplore
-keymap("", "<leader>e", ":Lex 40<cr>", opts)
+-- erase current search
+keymap("n", '<leader>/', ":nohlsearch<CR>", opts)
+
+-- toggle Lexplore)
+keymap("", "<leader>e", ":Lex 40<cr>", opts) -- compatible only with netrw
+-- nvim-tree
+-- keymap('n', "<leader>e", ":NvimTreeFindFileToggle<CR>", opts)
 
 -- LSP controls
 --

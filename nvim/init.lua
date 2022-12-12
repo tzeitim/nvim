@@ -5,6 +5,7 @@ require 'tzeitim.colors'
 require 'tzeitim.lsp'
 --require 'tzeitim.cmp'
 require 'tzeitim.telescope'
+require 'tzeitim.nvim-tree'
 require 'tzeitim.after'
 require 'tzeitim.treesitter'
 

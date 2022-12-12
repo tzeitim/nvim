@@ -71,9 +71,14 @@ return packer.startup(function(use)
   -- E605: Exception not caught: fzf#run function not found. You also need Vim plugin from the main fzf repository (i.e. junegunn/fzf *and* junegunn/fzf.vim)
   use {'junegunn/fzf'}
   use {'junegunn/fzf.vim', dir= '~/.fzf/bin/fzf'}
-  -- sticku headers
+  -- sticky headers ??
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-treesitter/nvim-treesitter-context'
+
+  -- from chris power
+  use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'nvim-lualine/lualine.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
